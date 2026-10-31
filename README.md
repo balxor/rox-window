@@ -6,6 +6,12 @@ Built with C# and .NET Framework 4.8 (WinForms). No installer, no background ser
 
 ![Layout](docs/layout.png)
 
+## Download
+
+Get the latest build from the [Releases page](https://github.com/balxor/rox-window/releases/latest):
+
+**ROX-Window-Tool-v1.0.0.exe** (39 KB) - extract and run, no installer.
+
 ## Features
 
 - **Exact window size** — choose a preset or type width/height in pixels. The value is the game client area; the border and title bar are calculated with `AdjustWindowRectEx`.
