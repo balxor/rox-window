@@ -72,4 +72,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-Kenshin Himura — Darkside TH, Srikandi server.
+Kenshin Himura — Darkside TH.
