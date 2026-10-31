@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -211,7 +211,7 @@ public class RoxCompact : Form
 
         int top = gameRunning ? 30 : 0;
 
-        // kartu pengaturan: 120 px
+        // settings card: 120 px
         var card = Card(new Point(0, top), new Size(735, 120), BgCard, Line);
         card.Controls.Add(Lbl("Preset", 10, 9, 50));
         cmbPreset = new ComboBox
@@ -247,7 +247,7 @@ public class RoxCompact : Form
         card.Controls.Add(lblPreview);
         pageSize.Controls.Add(card);
 
-        // kartu actions: 56 px - posisi tombol absolut, vertikal dipusatkan saat layout
+        // actions card: 56 px - buttons placed absolutely, vertically centred on layout
         var actions = Card(new Point(0, top + 128), new Size(735, 56), BgCard, Line);
         var btnSave = Primary("Launch Game", new Point(10, 12), new Size(210, 32));
         btnSave.Click += SaveAndLaunch;
@@ -263,7 +263,7 @@ public class RoxCompact : Form
             btnSave.Top = cy; btnCancel.Top = cy;
         };
         pageSize.Controls.Add(actions);
-        // kartu ringkasan: 62 px
+        // summary card: 62 px
         var summary = Card(new Point(0, top + 192), new Size(735, 62), BgCard, Line);
         Sum(summary, "Target:", 10, 8, out lblSumTarget);
         Sum(summary, "Calculated:", 370, 8, out lblSumCalc);
@@ -681,7 +681,7 @@ public class RoxCompact : Form
                WS_MINIMIZEBOX = 0x00020000L, WS_MAXIMIZEBOX = 0x00010000L;
     const uint SWP_FRAMECHANGED = 0x0020, SWP_SHOWWINDOW = 0x0040, SWP_NOZORDER = 0x0004;
 
-    // 0 = tidak ada, 1 = paksa borderless, 2 = paksa berbingkai
+    // 0 = off, 1 = force borderless, 2 = force bordered
     static volatile int blMode;
 
     void SaveWindowedRegistry(int w, int h)
