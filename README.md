@@ -14,12 +14,12 @@ Get the latest build from the [Releases page](https://github.com/balxor/rox-wind
 
 ## Features
 
-- **Exact window size** — choose a preset or type width/height in pixels. The value is the game client area; the border and title bar are calculated with `AdjustWindowRectEx`.
+- **Exact window size** - choose a preset or type width/height in pixels. The value is the game client area; the border and title bar are calculated with `AdjustWindowRectEx`.
 - **Layout presets** for 1 to 6 clients, based on your monitor work area.
-- **Arrange Windows** — tile 1 to 9 open clients with no gaps; the last row is centred.
-- **Two orientations for 2 clients** — side by side, or stacked (each window the size of a 4-window cell, centred).
-- **Launch Game** — writes the size to the game's own registry entry and starts `rox.exe` directly.
-- **About Me** — build information, the executable's own SHA-256 (computed at runtime) and a link to VirusTotal.
+- **Arrange Windows** - tile 1 to 9 open clients with no gaps; the last row is centred.
+- **Two orientations for 2 clients** - side by side, or stacked (each window the size of a 4-window cell, centred).
+- **Launch Game** - writes the size to the game's own registry entry and starts `rox.exe` directly.
+- **About Me** - build information, the executable's own SHA-256 (computed at runtime) and a link to VirusTotal.
 
 ## Requirements
 
@@ -49,7 +49,7 @@ HKEY_CURRENT_USER\Software\gravity\ro3
 - The client stores its own window size when it exits. Close the game before changing the size, otherwise your new value is overwritten.
 - The client re-applies its internal resolution when the login scene loads. If a client still changes size on its own, set the display once from the in-game Settings menu.
 - Fullscreen and borderless modes were removed on purpose: changing the window style makes an exact client size impossible to guarantee.
-- The executable is **not code-signed**. Windows SmartScreen may show "Windows protected your PC" — choose **More info → Run anyway**.
+- The executable is **not code-signed**. Windows SmartScreen may show "Windows protected your PC" - choose **More info → Run anyway**.
 
 ## Build
 
@@ -68,8 +68,8 @@ Small unsigned .NET executables are sometimes flagged by heuristic engines. The 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
 
 ## Author
 
-Kenshin Himura — Darkside TH.
+Kenshin Himura - Darkside TH.
